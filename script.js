@@ -6,23 +6,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const translations = {
         "ua": {
-            "pageTitle": "Ukrainian Hacker School - Дитяча школа робототехніки",
-            "metaDescription": "Ukrainian Hacker School: Створюємо майбутніх інженерів вже сьогодні! Захопливі курси з робототехніки та програмування для дітей від 6 до 16 років.",
+            "pageTitle": "IT Kinderschule - Дитяча школа робототехніки",
+            "metaDescription": "IT Kinderschule: Створюємо майбутніх інженерів вже сьогодні! Захопливі курси з робототехніки та програмування для дітей від 6 до 16 років.",
 
             "navAbout": "Про нас",
             "navCourses": "Курси",
             "navGallery": "Галерея",
             "navReviews": "Відгуки",
             "navContact": "Контакти",
-            "btnTrialLesson": "Записатись на пробний урок",
+            "btnTrialLesson": "Надіслати заявку",
 
-            "heroTitle": "Ukrainian Hacker School: Створюємо майбутніх інженерів вже сьогодні!",
+            "heroTitle": "IT Kinderschule: Програмуємо майбутнє!",
             "heroSubtitle": "Запрошуємо дітей віком від 6 до 16 років на захопливі курси з робототехніки та програмування.",
             "btnLearnMore": "Дізнатись більше",
 
-            "aboutTitle": "Чому обирають Ukrainian Hacker School?",
+            "aboutTitle": "Чому обирають IT Kinderschule?",
             "aboutMission": "Наша місія та цінності",
-            "aboutText": "Ми в Ukrainian Hacker School віримо, що кожна дитина має потенціал стати винахідником. Наша місія — надати дітям знання та навички в галузі STEM (наука, технології, інженерія, математика) через гру та творчість. Ми розвиваємо логічне мислення, креативність та вміння працювати в команді.",
+            "aboutText": "Ми в IT Kinderschule віримо, що кожна дитина має потенціал стати винахідником. Наша місія — надати дітям знання та навички в галузі STEM (наука, технології, інженерія, математика) через гру та творчість. Ми розвиваємо логічне мислення, креативність та вміння працювати в команді.",
             "aboutPoint1": "Досвідчені та енергійні викладачі-практики.",
             "aboutPoint2": "Унікальна методика навчання \"від простого до складного\".",
             "aboutPoint3": "Сучасне обладнання та навчальні класи.",
@@ -30,26 +30,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
             "coursesTitle": "Програми навчання",
 
-            "course1Title": "Основи робототехніки Lego WeDo",
-            "course1Age": "Вік: 6-8 років",
-            "course1Desc": "Діти збирають та програмують перших роботів, вивчаючи основи механіки та логіки у ігровій формі.",
-            "course1Details": "Розклад: СБ 10:00-11:30 | Вартість: 40 EUR/Monat.",
+            "course1Title": "BBC micro:bit",
+            "course1Age": "Вік: 10-14 років",
+            "course1Desc": "Діти створюють справжні розумні пристрої, використовуючи плату BBC micro:bit — сучасний інструмент для навчання робототехніки та програмування.",
+            "course1Details": "Розклад: СБ 16:30-19:00",
             
-            "course2Title": "Робототехніка Lego Mindstorms",
-            "course2Age": "Вік: 9-12 років",
-            "course2Desc": "Створення складніших роботів, знайомство з датчиками, моторами та візуальним програмуванням.",
-            "course2Details": "Розклад: СБ 12:00-14:00 | Вартість: 50 EUR/Monat.",
+            "course2Title": "Arduino",
+            "course2Age": "Вік: 12-18 років",
+            "course2Desc": "Вивчення програмування і створення роботів на базі мікроконтроллера Arduino – ці заняття розраховані на дітей, які цікавляться електронікою, електричними схемами та програмуванням.",
+            "course2Details": "Розклад: СБ 16:30-19:00",
 
-            "course3Title": "Програмування на Python",
-            "course3Age": "Вік: 12-16 років",
-            "course3Desc": "Вивчення популярної мови програмування Python для створення ігор та автоматизації завдань.",
-            "course3Details": "Розклад: НД 15:00-17:00 | Вартість: 60 EUR/Monat.",
+            "course3Title": "Штучний інтелект",
+            "course3Age": "Вік: 12-18 років",
+            "course3Desc": "На цих заняттях ми будемо створювати чи використовувати вже створені роботизовані пристрої, які працюють на базі штучного інтелекту (АІ).",
+            "course3Details": "Розклад: СБ 16:30-19:00",
+
+            "course4Title": "Scratch",
+            "course4Age": "Вік: 7-12 років",
+            "course4Desc": "На цих заняттях діти розвивають логіку, креативність і вміння працювати в команді.",
+            "course4Details": "Розклад: СБ 16:30-19:00",
+
+            "course5Title": "HTML+CSS+JS",
+            "course5Age": "Вік: 12-18 років",
+            "course5Desc": "Навички веброзробки — це не лише цікаве хобі, а й основа для майбутньої професії у сфері ІТ.",
+            "course5Details": "Розклад: СБ 16:30-19:00",
 
             "galleryTitle": "Як проходять наші заняття",
 
             "reviewsTitle": "Що кажуть батьки та учні",
 
-            "reviews11Title": "Син просто в захваті! Раніше не відривався від ігор, а тепер просить купити набори Lego, щоб збирати щось нове вдома. Дякую Ukrainian Hacker School!",
+            "reviews11Title": "Син просто в захваті! Раніше не відривався від ігор, а тепер просить купити набори Lego, щоб збирати щось нове вдома. Дякую IT Kinderschule!",
             "reviews12Title": "Анна К.",
             "reviews13Title": "Мама учня",
 
@@ -69,41 +79,41 @@ document.addEventListener('DOMContentLoaded', function () {
             "faq3Title": "Моя дитина ніколи не займалася програмуванням. Їй підійдуть ваші курси?",
             "faq4Title": "Так, звісно! Наші курси розраховані на дітей з різним рівнем підготовки, включаючи абсолютних новачків. Ми починаємо з азів і поступово ускладнюємо завдання, щоб кожній дитині було комфортно та цікаво.",
 
-            "faq5Title": "Чи можна повернути кошти, якщо дитині не сподобається?",
-            "faq6Title": "Ми пропонуємо пробне заняття, щоб ви могли зрозуміти, чи підходить дитині наш формат. Якщо після оплати абонементу ви вирішите припинити заняття, ми зможемо повернути кошти за невикористані уроки згідно з умовами нашого договору.",
+            "faq5Title": "Як мені отримувати новини?",
+            "faq6Title": "Ви можете залишити контакт і підписатись на розсилку нижче у наданій формі. Ми надішлемо вам потрібну інформацію на пошту яку ви вкажете.",
 
             "contactTitle": "Запишіться до нас!",
             "formChildName": "Ім'я дитини",
             "formChildAge": "Вік дитини",
             "formParentName": "Ім'я одного з батьків",
-            "formPhone": "Телефон",
+            "formPhone": "Контакт",
             "formEmail": "E-mail",
             "formSubmitBtn": "Надіслати заявку",
             "addressLabel": "Адреса:",
-            "phoneLabel": "Телефон:",
+            "phoneLabel": "Контакт:",
             "emailLabel": "E-Mail:",
 
             "footerRights": "Всі права захищено."
         },
         "de": {
 
-            "pageTitle": "Ukrainian Hacker School - Robotikschule für Kinder",
-            "metaDescription": "Ukrainian Hacker School: Wir schaffen die Ingenieure von morgen, schon heute! Spannende Kurse in Robotik und Programmierung für Kinder von 6 bis 16 Jahren.",
+            "pageTitle": "IT Kinderschule - Robotikschule für Kinder",
+            "metaDescription": "IT Kinderschule: Wir schaffen die Ingenieure von morgen, schon heute! Spannende Kurse in Robotik und Programmierung für Kinder von 6 bis 16 Jahren.",
 
             "navAbout": "Über uns",
             "navCourses": "Kurse",
             "navGallery": "Galerie",
             "navReviews": "Bewertungen",
             "navContact": "Kontakt",
-            "btnTrialLesson": "Für eine Probestunde anmelden",
+            "btnTrialLesson": "Bewerbung senden",
 
-            "heroTitle": "Ukrainian Hacker School: Wir schaffen die Ingenieure von morgen, schon heute!",
+            "heroTitle": "IT Kinderschule:Code for future!",
             "heroSubtitle": "Wir laden Kinder von 6 bis 16 Jahren zu spannenden Kursen in Robotik und Programmierung ein.",
             "btnLearnMore": "Mehr erfahren",
 
-            "aboutTitle": "Warum Ukrainian Hacker School wählen?",
+            "aboutTitle": "Warum IT Kinderschule wählen?",
             "aboutMission": "Unsere Mission und Werte",
-            "aboutText": "Wir bei Ukrainian Hacker School glauben, dass jedes Kind das Potenzial hat, ein Erfinder zu werden. Unsere Mission ist es, Kindern Wissen und Fähigkeiten im MINT-Bereich (Mathematik, Informatik, Naturwissenschaft, Technik) durch Spiel und Kreativität zu vermitteln. Wir fördern logisches Denken, Kreativität und Teamfähigkeit.",
+            "aboutText": "Wir bei IT Kinderschule glauben, dass jedes Kind das Potenzial hat, ein Erfinder zu werden. Unsere Mission ist es, Kindern Wissen und Fähigkeiten im MINT-Bereich (Mathematik, Informatik, Naturwissenschaft, Technik) durch Spiel und Kreativität zu vermitteln. Wir fördern logisches Denken, Kreativität und Teamfähigkeit.",
             "aboutPoint1": "Erfahrene und tatkräftige Lehrkräfte aus der Praxis.",
             "aboutPoint2": "Einzigartige Lehrmethode \"vom Einfachen zum Komplexen\".",
             "aboutPoint3": "Moderne Ausstattung und Unterrichtsräume.",
@@ -111,26 +121,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
             "coursesTitle": "Lernprogramme",
 
-            "course1Title": "Grundlagen der Robotik mit Lego WeDo",
-            "course1Age": "Alter: 6-8 Jahre",
-            "course1Desc": "Kinder bauen und programmieren ihre ersten Roboter und lernen spielerisch die Grundlagen der Mechanik und Logik.",
-            "course1Details": "Zeitplan: Sa 10:00-11:30 | Preis: 40 EUR/Monat.",
+            "course1Title": "BBC micro:bit",
+            "course1Age": "Alter: 10-14 Jahre",
+            "course1Desc": "Kinder entwickeln echte intelligente Geräte mit Hilfe der BBC micro:bit-Platine – einem modernen Werkzeug zum Erlernen von Robotik und Programmierung.",
+            "course1Details": "Zeitplan: Sa 16:30-19:00",
+            
+            "course2Title": "Arduino",
+            "course2Age": "Alter: 12-18 Jahre",
+            "course2Desc": "Lernen von Programmierung und Bau von Robotern auf Basis des Mikrocontrollers Arduino – diese Kurse richten sich an Kinder, die sich für Elektronik, elektrische Schaltungen und Programmierung interessieren.",
+            "course2Details": "Zeitplan: Sa 16:30-19:00",
 
-            "course2Title": "Lego Mindstorms Robotik",
-            "course2Age": "Alter: 9-12 Jahre",
-            "course2Desc": "Erstellung komplexerer Roboter, Kennenlernen von Sensoren, Motoren und visueller Programmierung.",
-            "course2Details": "Zeitplan: Sa 12:00-14:00 | Preis: 50 EUR/Monat.",
+            "course3Title": "Штучний інтелект",
+            "course3Age": "Alter: 12-18 Jahre",
+            "course3Desc": "In diesen Kursen werden wir robotergesteuerte Geräte entwickeln oder bereits vorhandene nutzen, die auf künstlicher Intelligenz (KI) basieren.",
+            "course3Details": "Zeitplan: Sa 16:30-19:00",
 
-            "course3Title": "Programmieren mit Python",
-            "course3Age": "Alter: 12-16 Jahre",
-            "course3Desc": "Erlernen der beliebten Programmiersprache Python zum Erstellen von Spielen und zur Automatisierung von Aufgaben.",
-            "course3Details": "Zeitplan: So 15:00-17:00 | Preis: 60 EUR/Monat.",
+            "course4Title": "Scratch",
+            "course4Age": "Alter: 7-12 Jahre",
+            "course4Desc": "In diesen Kursen entwickeln Kinder ihre Logik, Kreativität und Teamfähigkeit.",
+            "course4Details": "Zeitplan: Sa 16:30-19:00",
+
+            "course5Title": "HTML+CSS+JS",
+            "course5Age": "Alter: 12-18 Jahre",
+            "course5Desc": "Webentwicklungsfähigkeiten sind nicht nur ein interessantes Hobby, sondern auch die Grundlage für einen zukünftigen Beruf im IT-Bereich.",
+            "course5Details": "Zeitplan: Sa 16:30-19:00",
 
             "galleryTitle": "Wie unsere Kurse ablaufen",
 
             "reviewsTitle": "Was Eltern und Schüler sagen",
 
-            "reviews11Title": "Mein Sohn ist total begeistert! Früher konnte er sich kaum von seinen Spielen losreißen, jetzt bittet er mich, ihm Lego-Sets zu kaufen, damit er zu Hause etwas Neues bauen kann. Vielen Dank, Ukrainian Hacker School!",
+            "reviews11Title": "Mein Sohn ist total begeistert! Früher konnte er sich kaum von seinen Spielen losreißen, jetzt bittet er mich, ihm Lego-Sets zu kaufen, damit er zu Hause etwas Neues bauen kann. Vielen Dank, IT Kinderschule!",
             "reviews12Title": "Anna K.",
             "reviews13Title": "Die Mutter des Schülers",
 
@@ -150,18 +170,18 @@ document.addEventListener('DOMContentLoaded', function () {
             "faq3Title": "Mein Kind hat noch nie programmiert. Sind Ihre Kurse für es geeignet?",
             "faq4Title": "Ja, natürlich! Unsere Kurse sind für Kinder mit unterschiedlichen Vorkenntnissen konzipiert, einschließlich absoluter Anfänger. Wir beginnen mit den Grundlagen und steigern den Schwierigkeitsgrad schrittweise, damit jedes Kind sich wohlfühlt und Spaß daran hat.",
 
-            "faq5Title": "Kann man das Geld zurückbekommen, wenn es dem Kind nicht gefällt?",
-            "faq6Title": "Wir bieten eine Probestunde an, damit Sie sehen können, ob unser Format für Ihr Kind geeignet ist. Wenn Sie nach der Bezahlung des Abonnements beschließen, den Unterricht abzubrechen, können wir Ihnen die Kosten für die nicht in Anspruch genommenen Stunden gemäß den Bedingungen unseres Vertrags zurückerstatten.",
+            "faq5Title": "Wie erhalte ich Neuigkeiten?",
+            "faq6Title": "Sie können Ihre Kontaktdaten hinterlassen und sich unten im Formular für den Newsletter anmelden. Wir senden Ihnen die gewünschten Informationen an die von Ihnen angegebene E-Mail-Adresse.",
 
             "contactTitle": "Melden Sie sich bei uns an!",
             "formChildName": "Name des Kindes",
             "formChildAge": "Alter des Kindes",
             "formParentName": "Name eines Elternteils",
-            "formPhone": "Telefon",
+            "formPhone": "Kontakt",
             "formEmail": "E-Mail",
             "formSubmitBtn": "Anfrage senden",
             "addressLabel": "Adresse:",
-            "phoneLabel": "Telefon:",
+            "phoneLabel": "Kontakt:",
             "emailLabel": "E-Mail:",
 
             "footerRights": "Alle Rechte vorbehalten."
