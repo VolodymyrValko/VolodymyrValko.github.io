@@ -27,13 +27,6 @@ hr {
     opacity: 1;
 }
 
-.hero-section {
-    background-image: url('https://chl.kiev.ua/novunu/2024/241028/11329/3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .navbar-brand {
     font-size: 1.5rem;
 }
@@ -49,7 +42,7 @@ hr {
 
 #hero {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080.png?text=Діти+збирають+роботів') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 200, 0.7)), no-repeat center center;
     background-size: cover;
 }
 
