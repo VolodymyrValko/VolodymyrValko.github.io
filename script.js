@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             "reviewsTitle": "Що кажуть батьки та учні",
 
-            "reviews11Title": "Син просто в захваті! Раніше не відривався від ігор, а тепер просить купити набори Lego, щоб збирати щось нове вдома. Дякую IT Kinderschule!",
+            "reviews11Title": "Син просто в захваті! Раніше не відривався від ігор, а тепер просить купити micro:bit, щоб збирати щось нове вдома. Дякую IT Kinderschule!",
             "reviews12Title": "Анна К.",
             "reviews13Title": "Мама учня",
 
@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
             "formChildName": "Ім'я дитини",
             "formChildAge": "Вік дитини",
             "formParentName": "Ім'я одного з батьків",
-            "formPhone": "Контакт",
+            "formPhone": "Запис на заняття",
             "formEmail": "E-mail",
             "formSubmitBtn": "Надіслати заявку",
             "addressLabel": "Адреса:",
-            "phoneLabel": "Контакт:",
+            "phoneLabel": "Запис на заняття:",
             "emailLabel": "E-Mail:",
 
             "footerRights": "Всі права захищено."
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             "reviewsTitle": "Was Eltern und Schüler sagen",
 
-            "reviews11Title": "Mein Sohn ist total begeistert! Früher konnte er sich kaum von seinen Spielen losreißen, jetzt bittet er mich, ihm Lego-Sets zu kaufen, damit er zu Hause etwas Neues bauen kann. Vielen Dank, IT Kinderschule!",
+            "reviews11Title": "Mein Sohn ist total begeistert! Früher konnte er sich kaum von seinen Spielen losreißen, jetzt bittet er mich, ihm micro:bit zu kaufen, damit er zu Hause etwas Neues bauen kann. Vielen Dank, IT Kinderschule!",
             "reviews12Title": "Anna K.",
             "reviews13Title": "Die Mutter des Schülers",
 
@@ -177,11 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
             "formChildName": "Name des Kindes",
             "formChildAge": "Alter des Kindes",
             "formParentName": "Name eines Elternteils",
-            "formPhone": "Kontakt",
+            "formPhone": "Anmeldung zum Unterricht",
             "formEmail": "E-Mail",
             "formSubmitBtn": "Anfrage senden",
             "addressLabel": "Adresse:",
-            "phoneLabel": "Kontakt:",
+            "phoneLabel": "Anmeldung zum Unterricht:",
             "emailLabel": "E-Mail:",
 
             "footerRights": "Alle Rechte vorbehalten."
