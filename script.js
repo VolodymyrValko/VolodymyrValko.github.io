@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "formChildName": "Ім'я дитини",
             "formChildAge": "Вік дитини",
             "formParentName": "Ім'я одного з батьків",
-            "formPhone": "Запис на заняття",
+            "formPhone": "Номер телефону",
             "formEmail": "E-mail",
             "formSubmitBtn": "Надіслати заявку",
             "addressLabel": "Адреса:",
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "formChildName": "Name des Kindes",
             "formChildAge": "Alter des Kindes",
             "formParentName": "Name eines Elternteils",
-            "formPhone": "Anmeldung zum Unterricht",
+            "formPhone": "Telefonnummer",
             "formEmail": "E-Mail",
             "formSubmitBtn": "Anfrage senden",
             "addressLabel": "Adresse:",
@@ -239,28 +239,24 @@ document.addEventListener('DOMContentLoaded', function () {
 const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Забороняємо стандартну відправку форми
+            event.preventDefault();
 
             const formData = new FormData(contactForm);
 
-            // Відправка даних на сервер за допомогою Fetch API
             fetch('submit_application.php', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json()) // Очікуємо JSON-відповідь від сервера
+            .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // Якщо сервер відповів успіхом
                     alert(data.message);
                     contactForm.reset();
                 } else {
-                    // Якщо є помилка на сервері
                     alert('Помилка: ' + data.message);
                 }
             })
             .catch(error => {
-                // Обробка помилок мережі або інших проблем
                 console.error('Помилка:', error);
                 alert('Сталася помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
             });
