@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "btnTrialLesson": "Надіслати заявку",
 
             "heroTitle": "IT Kinderschule: Програмуємо майбутнє!",
-            "heroSubtitle": "Запрошуємо дітей віком від 6 до 16 років на захопливі курси з робототехніки та програмування.",
+            "heroSubtitle": "Запрошуємо дітей віком від 7 до 18 років на захопливі курси з робототехніки та програмування.",
             "btnLearnMore": "Дізнатись більше",
 
             "aboutTitle": "Чому обирають IT Kinderschule?",
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "btnTrialLesson": "Bewerbung senden",
 
             "heroTitle": "IT Kinderschule:Code for future!",
-            "heroSubtitle": "Wir laden Kinder von 6 bis 16 Jahren zu spannenden Kursen in Robotik und Programmierung ein.",
+            "heroSubtitle": "Wir laden Kinder von 7 bis 18 Jahren zu spannenden Kursen in Robotik und Programmierung ein.",
             "btnLearnMore": "Mehr erfahren",
 
             "aboutTitle": "Warum IT Kinderschule wählen?",
