@@ -26,18 +26,6 @@ $parent_name = $_POST['parentName'] ?? '';
 $phone = $_POST['phone'] ?? '';
 $email = $_POST['email'] ?? '';
 
-if (empty($child_name) || empty($child_age) || empty($parent_name) || empty($phone) || empty($email)) {
-    echo json_encode(["success" => false, "message" => "Будь ласка, заповніть всі обов'язкові поля."]);
-    $conn->close();
-    exit();
-}
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo json_encode(["success" => false, "message" => "Будь ласка, введіть коректний E-mail."]);
-    $conn->close();
-    exit();
-}
-
 if (!is_numeric($child_age) || $child_age < 1 || $child_age > 99) {
      echo json_encode(["success" => false, "message" => $child_age]);
     $conn->close();
