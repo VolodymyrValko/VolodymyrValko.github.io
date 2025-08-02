@@ -236,12 +236,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    const contactForm = document.getElementById('contactForm');
+const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('Дякуємо за вашу заявку! Ми зв\'яжемося з вами найближчим часом.');
-            contactForm.reset();
+            event.preventDefault(); // Забороняємо стандартну відправку форми
+
+            const formData = new FormData(contactForm);
+
+            // Відправка даних на сервер за допомогою Fetch API
+            fetch('submit_application.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Очікуємо JSON-відповідь від сервера
+            .then(data => {
+                if (data.success) {
+                    // Якщо сервер відповів успіхом
+                    alert(data.message);
+                    contactForm.reset();
+                } else {
+                    // Якщо є помилка на сервері
+                    alert('Помилка: ' + data.message);
+                }
+            })
+            .catch(error => {
+                // Обробка помилок мережі або інших проблем
+                console.error('Помилка:', error);
+                alert('Сталася помилка при відправці заявки. Будь ласка, спробуйте ще раз.');
+            });
         });
     }
 
