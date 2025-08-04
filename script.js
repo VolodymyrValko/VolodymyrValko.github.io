@@ -236,7 +236,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-/*const contactForm = document.getElementById('contactForm');
+/*
+const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -274,3 +275,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
