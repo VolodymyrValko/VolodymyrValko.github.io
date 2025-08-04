@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "formChildAge": "Вік дитини",
             "formParentName": "Ім'я одного з батьків",
             "formPhone": "Номер телефону",
-            "formEmail": "E-mail",
+            "formEmail": "E-Mail",
             "formSubmitBtn": "Надіслати заявку",
             "addressLabel": "Адреса:",
             "phoneLabel": "Запис на заняття:",
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "course2Desc": "Lernen von Programmierung und Bau von Robotern auf Basis des Mikrocontrollers Arduino – diese Kurse richten sich an Kinder, die sich für Elektronik, elektrische Schaltungen und Programmierung interessieren.",
             "course2Details": "Zeitplan: Sa 16:30-19:00",
 
-            "course3Title": "Штучний інтелект",
+            "course3Title": "Künstliche Intelligenz",
             "course3Age": "Alter: 12-18 Jahre",
             "course3Desc": "In diesen Kursen werden wir robotergesteuerte Geräte entwickeln oder bereits vorhandene nutzen, die auf künstlicher Intelligenz (KI) basieren.",
             "course3Details": "Zeitplan: Sa 16:30-19:00",
