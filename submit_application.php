@@ -1,27 +1,54 @@
 <?php
 
-$to_email = "radarix75@gmail.com";
-$subject = "Нові заявки з сайту IT Kinderschule";
+header('Content-Type: application/json');
 
-    $message = "<html><body>";
-    $message .= "<h2>Нові заявки з форми на сайті:</h2>";
-    $message .= "<table border='1' cellpadding='5' cellspacing='0'>";
-    $message .= "<tr style='background-color: #f2f2f2;'>";
-    $message .= "<th>ID</th><th>Ім'я дитини</th><th>Вік дитини</th><th>Ім'я батьків</th><th>Телефон</th><th>Email</th><th>Дата заявки</th>";
-    $message .= "</tr>";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "ITKinderschuleDB";
 
-    $message .= "</table>";
-    $message .= "</body></html>";
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: itkinderschuledb@gmail.com" . "\r\n";
+if ($conn->connect_error) {
+    echo json_encode(["success" => false, "message" => "Помилка підключення до бази даних: " . $conn->connect_error]);
+    exit();
+}
 
-    if (mail($to_email, $subject, $message, $headers)) {
-        echo "Лист успішно надіслано.";
-    } else {
-        echo "Помилка при надсиланні листа.";
-    }
-
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+    echo json_encode(["success" => false, "message" => "Невірний метод запиту."]);
     $conn->close();
+    exit();
+}
+
+$child_name = $_POST['childName'] ?? '';
+$child_age = $_POST['childAge'] ?? '';
+$parent_name = $_POST['parentName'] ?? '';
+$phone = $_POST['phone'] ?? '';
+$email = $_POST['email'] ?? '';
+
+if (!is_numeric($child_age) || $child_age < 1 || $child_age > 99) {
+     echo json_encode(["success" => false, "message" => $child_age]);
+    $conn->close();
+    exit();
+}
+
+$sql = "INSERT INTO applications (child_name, child_age, parent_name, phone, email) VALUES (?, ?, ?, ?, ?)";
+
+$stmt = $conn->prepare($sql);
+if ($stmt === false) {
+    echo json_encode(["success" => false, "message" => "Помилка підготовки запиту: " . $conn->error]);
+    $conn->close();
+    exit();
+}
+
+$stmt->bind_param("sisss", $child_name, $child_age, $parent_name, $phone, $email);
+
+if ($stmt->execute()) {
+    echo json_encode(["success" => true, "message" => "Ваша заявка успішно надіслана!"]);
+} else {
+    echo json_encode(["success" => false, "message" => "Помилка при збереженні даних: " . $stmt->error]);
+}
+
+$stmt->close();
+$conn->close();
 ?>
