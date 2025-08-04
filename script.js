@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-const contactForm = document.getElementById('contactForm');
+/*const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -262,7 +262,7 @@ const contactForm = document.getElementById('contactForm');
             });
         });
     }
-
+*/
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navCollapse = document.querySelector('.navbar-collapse.collapse');
     navLinks.forEach(link => {
