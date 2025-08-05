@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "footerRights": "Alle Rechte vorbehalten."
         }
     };
-    
+
     const langButtons = {
         ua: document.getElementById('lang-ua'),
         de: document.getElementById('lang-de')
@@ -274,4 +274,12 @@ const contactForm = document.getElementById('contactForm');
             }
         });
     });
+
+    if (galleryModal) {
+        galleryModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const imageSrc = button.getAttribute('src');
+            modalImage.setAttribute('src', imageSrc);
+        });
+    }
 });
